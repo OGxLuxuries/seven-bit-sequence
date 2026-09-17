@@ -3,10 +3,12 @@ html{
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-
+body{
+   background-color: #f2f2f7;
+}
 #root{
   max-width: 100%;
-  width:100%;
+  background-color: #f2f2f7;
 }
 
 .main-content{
@@ -16,8 +18,6 @@ html{
 .page-main{
   background-color: #f2f2f7;
   flex:1;
-  margin:30px;
-  padding:10px;
 }
 
 main{
