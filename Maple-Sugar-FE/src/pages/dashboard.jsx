@@ -13,7 +13,12 @@ export function Dashboard() {
             </Container> 
             Future code for implementing dynamic creation of new battery nodes
             */}
-        <Container className="battery" disableGutters>
+        <Container className="battery" disableGutters 
+  maxWidth={false} sx={{display: 'flex', 
+                        justifySelf: 'center', 
+                        border: '2px solid black',
+                        width: 'calc(100% - 40px)'
+  }}>
           <Box>
             <BasicGauge value="20" />
             <h3>Node 1</h3>
@@ -25,10 +30,6 @@ export function Dashboard() {
           <Box>
             <BasicGauge value="80" />
             <h3>Node 3</h3>
-          </Box>
-          <Box>
-            <BasicGauge value="0" />
-            <h3>Node 4</h3>
           </Box>
         </Container>
       </main>

@@ -19,9 +19,7 @@ function Layout() {
   return (
     <Container className="layout" disableGutters maxWidth={false} sx={{display:'flex', flexDirection:'column', flexGrow:1, margin:0, }}>
       <Header />
-      <main className="main-content">
         <Outlet />
-      </main>
       <Footer />
     </Container>
   )
