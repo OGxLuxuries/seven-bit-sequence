@@ -1,13 +1,12 @@
 import { Container } from "@mui/material";
 import { BasicGauge } from "../components/gauge";
-import Report from "../components/weatherReport";
 import Box from "@mui/material/Box";
 import "../css/dashboard.css";
 
 export function Dashboard() {
   return (
     <>
-      <main className="page-main">
+      <main className="page-main" id="dashboard-main">
         <h1>Dashboard</h1>
         {/* <Container className="battery" margin={0} disableGutters>
                 <BasicGauge count={3}/>
@@ -33,7 +32,8 @@ export function Dashboard() {
             <h3>Node 3</h3>
           </Box>
         </Container>
-        <Report/>
+
+        
       </main>
     </>
   );
