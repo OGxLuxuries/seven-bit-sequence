@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import { BasicGauge } from "../components/gauge";
+import Report from "../components/weatherReport";
 import Box from "@mui/material/Box";
 import "../css/dashboard.css";
 
@@ -32,6 +33,7 @@ export function Dashboard() {
             <h3>Node 3</h3>
           </Box>
         </Container>
+        <Report/>
       </main>
     </>
   );

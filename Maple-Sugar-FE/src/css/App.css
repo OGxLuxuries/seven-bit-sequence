@@ -17,3 +17,7 @@ html{
   color:#000000;
   flex:1;
 }
+
+main{
+    background: none;
+}

@@ -109,3 +109,13 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
