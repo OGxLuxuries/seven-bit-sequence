@@ -5,7 +5,10 @@
     justify-Content:space-around;
     background:white;
     border-Radius:10px;
-    margin:0px;
-    width:100%;
-    max-width: none;
+    padding:1%;
+
+}
+
+main{
+    background: none;
 }
