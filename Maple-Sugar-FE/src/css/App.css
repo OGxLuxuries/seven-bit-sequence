@@ -14,8 +14,10 @@ html{
 }
 
 .page-main{
-  color:#000000;
+  background-color: #f2f2f7;
   flex:1;
+  margin:30px;
+  padding:10px;
 }
 
 main{
