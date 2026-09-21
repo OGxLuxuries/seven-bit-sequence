@@ -8,3 +8,12 @@
     padding:1%;
 
 }
+
+html, body, #root {
+  background-color: #0f0f29;
+  min-height: 100vh;
+}
+
+.page-main {
+  background-color: transparent; /* or your color */
+}
