@@ -51,6 +51,7 @@ export function Dashboard() {
           </Container>
         </div>
 
+
         <div id="metrics-dashboard">
           <Container>
             {/* Chart for volume metric- hortizontal bar chart */}
