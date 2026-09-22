@@ -3,10 +3,26 @@ import { BasicGauge } from "../components/gauge";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import "../css/dashboard.css";
+import Report from "../components/weatherReport";
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material/styles';
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: (theme.vars ?? theme).palette.text.secondary,
+  ...theme.applyStyles('dark', {
+    backgroundColor: '#1A2027',
+  }),
+}));
+
 
 export function Dashboard() {
   return (
     <>
+    
       <main className="page-main">
         <h1>Dashboard</h1>
         {/* <Container className="battery" margin={0} disableGutters>
@@ -35,6 +51,7 @@ export function Dashboard() {
           </Container>
         </div>
 
+
         <div id="metrics-dashboard">
           <Container>
             <Card className="dash-card">
@@ -50,6 +67,7 @@ export function Dashboard() {
             {/* Weather dashboard component*/}
           </Container>
         </div>
+
 
         <div id="chart-creation">
           <Container>
