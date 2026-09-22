@@ -23,3 +23,17 @@
   border: 4px solid var(--white-65, rgba(255, 255, 255, 0.65));
   background: #272a3e;
 }
+
+
+html, body, #root {
+  background-color: #0f0f29;
+  min-height: 100vh;
+}
+
+.page-main {
+  background-color: transparent; /* or your color */
+}
+
+#chart-creation{
+  margin-bottom: 20px;
+}
