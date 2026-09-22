@@ -37,7 +37,15 @@ export function Dashboard() {
 
         <div id="metrics-dashboard">
           <Container>
-            {/* Chart for volume metric- hortizontal bar chart */}
+            <Card className="dash-card">
+              <p>Testing</p>
+                {/* Chart will display ontop of the card for volume metric- hortizontal bar chart */}
+                {/* {Add in dummy charts from dummy data} */}
+            </Card>
+             <Card className="dash-card">
+                {/* Chart will display ontop of the card for volume metric- hortizontal bar chart */}
+                {/* {Add in dummy charts from dummy data} */}
+            </Card>
             <Report />
             {/* Weather dashboard component*/}
           </Container>
