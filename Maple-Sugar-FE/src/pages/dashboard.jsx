@@ -48,6 +48,7 @@ export function Dashboard() {
 
 
         <div id="metrics-dashboard">
+<<<<<<< HEAD
           {/* Chart for volume metric- hortizontal bar chart */}
           <Card />
            <div id="chart-creation">
@@ -59,6 +60,51 @@ export function Dashboard() {
             >
               <Grid size={6}>
                 <Item>1</Item>
+=======
+          <Container>
+            <Card className="dash-card">
+              <p>Testing</p>
+                {/* Chart will display ontop of the card for volume metric- hortizontal bar chart */}
+                {/* {Add in dummy charts from dummy data} */}
+            </Card>
+             <Card className="dash-card">
+                {/* Chart will display ontop of the card for volume metric- hortizontal bar chart */}
+                {/* {Add in dummy charts from dummy data} */}
+            </Card>
+            <Report />
+            {/* Weather dashboard component*/}
+          </Container>
+        </div>
+
+
+        <div id="chart-creation">
+          <Container>
+            <h3></h3>
+            <Box className="menu">
+              <Grid
+                container
+                rowSpacing={4}
+                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+              >
+                <Grid size={6}>
+                  <Item>1</Item>
+                </Grid>
+                <Grid size={6}>
+                  <Item>2</Item>
+                </Grid>
+                <Grid size={6}>
+                  <Item>3</Item>
+                </Grid>
+                <Grid size={6}>
+                  <Item>4</Item>
+                </Grid>
+                <Grid size={6}>
+                  <Item>5</Item>
+                </Grid>
+                <Grid size={6}>
+                  <Item>6</Item>
+                </Grid>
+>>>>>>> 9e7be5b093b6d378f9e6e213339e25ab45e6cbf5
               </Grid>
               <Grid size={6}>
                 <Item>2</Item>
