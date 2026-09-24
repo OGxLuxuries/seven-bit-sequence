@@ -7,7 +7,6 @@
  * availability one.
  */
 
-import { createClient } from 'redis';
 import { config } from '../config.js';
 import { logger } from '../lib/logger.js';
 
@@ -24,6 +23,9 @@ export async function connectCache() {
     return null;
   }
 
+  // Imported here so a process with no REDIS_URL never loads the client.
+  // On Node 25 that import does not return, which stalls the test suite.
+  const { createClient } = await import('redis');
   client = createClient({
     url: config.redisUrl,
     socket: {

@@ -1,8 +1,25 @@
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import EditCalendarIcon from '@mui/icons-material/EditCalendar';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import ParkIcon from '@mui/icons-material/Park';
+import RestoreIcon from '@mui/icons-material/Restore';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/auth';
 import { navItemsFor } from '../../routes/navigation';
+
+const ICONS = {
+  bush: RestoreIcon,
+  schedule: CalendarMonthIcon,
+  collection: MenuBookIcon,
+  woods: ParkIcon,
+  notifications: NotificationsIcon,
+  scheduleAdmin: EditCalendarIcon,
+  admin: AdminPanelSettingsIcon,
+};
 
 export function MainNav() {
   const navigate = useNavigate();
@@ -24,7 +41,7 @@ export function MainNav() {
     >
       {items.map((item) => {
         const selected = location.pathname === item.to || location.pathname.startsWith(`${item.to}/`);
-        const Icon = item.icon;
+        const Icon = ICONS[item.icon];
         return (
           <Button
             key={item.to}

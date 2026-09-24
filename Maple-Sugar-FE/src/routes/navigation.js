@@ -1,53 +1,46 @@
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import EditCalendarIcon from '@mui/icons-material/EditCalendar';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import RestoreIcon from '@mui/icons-material/Restore';
-import ParkIcon from '@mui/icons-material/Park';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
 import { can, Capability } from '../business/permissions';
 
 export const NAV_ITEMS = [
   {
     to: '/dashboard',
     label: 'The Bush',
-    icon: RestoreIcon,
+    icon: 'bush',
     capability: Capability.VIEW_DASHBOARD,
   },
   {
     to: '/schedule',
     label: 'Schedule',
-    icon: CalendarMonthIcon,
+    icon: 'schedule',
     capability: Capability.VIEW_SCHEDULE,
   },
   {
     to: '/collection',
     label: 'Collection',
-    icon: MenuBookIcon,
+    icon: 'collection',
     capability: Capability.RECORD_DATA,
   },
   {
     to: '/table',
     label: 'Sugar Woods',
-    icon: ParkIcon,
+    icon: 'woods',
     capability: Capability.VIEW_DATA_TABLE,
   },
   {
     to: '/notifications',
     label: 'Notifications',
-    icon: NotificationsIcon,
+    icon: 'notifications',
     capability: Capability.VIEW_ALERTS,
   },
   {
     to: '/schedule-admin',
     label: 'Schedule Admin',
-    icon: EditCalendarIcon,
+    icon: 'scheduleAdmin',
     capability: Capability.MANAGE_SCHEDULE,
   },
   {
     to: '/admin',
     label: 'Admin',
-    icon: AdminPanelSettingsIcon,
+    icon: 'admin',
     capability: Capability.MANAGE_USERS,
   },
 ];
