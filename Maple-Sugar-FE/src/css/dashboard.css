@@ -1,23 +1,37 @@
 /* CSS Stylesheet for dashboard specific components */
+
+.page-main.dashboard-page{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
 .battery{
-    display:flex;
+ display:flex;
     flex-Direction:row;
     justify-Content:space-around;
     background:white;
     border-Radius:10px;
     padding:1%;
-
+    border:2px solid black;
 }
 
-html, body, #root {
-  background-color: #0f0f29;
-  min-height: 100vh;
-}
-
-.page-main {
-  background-color: transparent; /* or your color */
+.battery > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 #chart-creation{
-  margin-bottom: 20px;
+  margin-top: 32px;
+}
+
+#metrics-dashboard{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-around;
+margin-top:20px;
 }

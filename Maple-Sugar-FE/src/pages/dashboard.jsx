@@ -3,9 +3,10 @@ import { BasicGauge } from "../components/gauge";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import "../css/dashboard.css";
-import Report from "../components/weatherReport";
+import Card from "../components/weatherCard";
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -23,15 +24,9 @@ export function Dashboard() {
   return (
     <>
     
-      <main className="page-main">
-        <h1>Dashboard</h1>
-        {/* <Container className="battery" margin={0} disableGutters>
-                <BasicGauge count={3}/>
-            </Container> 
-            Future code for implementing dynamic creation of new battery nodes
-            */}
+      <main className="page-main dashboard-page">
         <div id="battery-health">
-          <Container className="battery" disableGutters>
+          <Container className="battery" disableGutters maxWidth={false}>
             <Box>
               <BasicGauge value="20" />
               <h3>Node 1</h3>
@@ -53,45 +48,43 @@ export function Dashboard() {
 
 
         <div id="metrics-dashboard">
-          <Container>
-            {/* Chart for volume metric- hortizontal bar chart */}
-            <Report />
-            {/* Weather dashboard component*/}
-          </Container>
-        </div>
-
-
-        <div id="chart-creation">
-          <Container>
-            <h3></h3>
-            <Box className="menu">
-              <Grid
-                container
-                rowSpacing={4}
-                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-              >
-                <Grid size={6}>
-                  <Item>1</Item>
-                </Grid>
-                <Grid size={6}>
-                  <Item>2</Item>
-                </Grid>
-                <Grid size={6}>
-                  <Item>3</Item>
-                </Grid>
-                <Grid size={6}>
-                  <Item>4</Item>
-                </Grid>
-                <Grid size={6}>
-                  <Item>5</Item>
-                </Grid>
-                <Grid size={6}>
-                  <Item>6</Item>
-                </Grid>
+          {/* Chart for volume metric- hortizontal bar chart */}
+          <Card />
+           <div id="chart-creation">
+          <Box className="menu">
+            <Grid
+              container
+              rowSpacing={4}
+              columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+            >
+              <Grid size={6}>
+                <Item>1</Item>
               </Grid>
-            </Box>
-          </Container>
+              <Grid size={6}>
+                <Item>2</Item>
+              </Grid>
+              <Grid size={6}>
+                <Item>3</Item>
+              </Grid>
+              <Grid size={6}>
+                <Item>4</Item>
+              </Grid>
+              <Grid size={6}>
+                <Item>5</Item>
+              </Grid>
+              <Grid size={6}>
+                <Item>6</Item>
+              </Grid>
+            </Grid>
+          </Box>
+            {/* Weather dashboard component*/}
+          </div>
+
         </div>
+
+
+
+       
       </main>
     </>
   );

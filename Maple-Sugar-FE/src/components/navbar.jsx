@@ -1,8 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+import TableChartIcon from '@mui/icons-material/TableChart';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -22,18 +23,18 @@ const Navbar = () => {
             <BottomNavigation value={location.pathname} onChange={handleChange} className="navbar" showLabels>
 
                 <BottomNavigationAction 
-                label="Home" value="/dashboard" icon={<RestoreIcon/>} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}}
+                label="Dashboard" value="/dashboard" icon={<RestoreIcon/>} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}}
                 />
 
                 <BottomNavigationAction 
-                label="Schedule" value="/schedule" icon={<FavoriteIcon />} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}}/>
+                label="Schedule" value="/schedule" icon={<CalendarMonthIcon/>} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}}/>
 
                 <BottomNavigationAction 
-                label="Input" value="/input" icon={<LocationOnIcon />} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}} 
+                label="Input" value="/input" icon={<DriveFolderUploadIcon />} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}} 
                 />
 
                 <BottomNavigationAction 
-                label="Table" value="/table" icon={<LocationOnIcon />} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}} 
+                label="Table" value="/table" icon={<TableChartIcon/>} sx={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap:1}} 
                 />
             </BottomNavigation>
       </Box>
